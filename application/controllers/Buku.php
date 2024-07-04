@@ -148,6 +148,8 @@ Penerbit', 'required|min_length[3]', [
         redirect('buku/kategori');
     }
 
+    
+
     public function ubahBuku()
     {
         $data['judul'] = 'Ubah Data Buku';
@@ -248,5 +250,4 @@ Penerbit', 'required|min_length[3]', [
         $this->ModelBuku->hapusBuku($where);
         redirect('buku');
     }
-
 }
